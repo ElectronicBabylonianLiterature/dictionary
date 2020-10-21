@@ -15,3 +15,6 @@ RUN pip install --upgrade pip
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
 ENV NODE_OPTIONS=--experimental-worker
+
+# See: https://github.com/gitpod-io/gitpod/issues/479
+ENV PIP_USER=no
